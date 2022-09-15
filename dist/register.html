@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/style1.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(83, 134, 83), green);
+        }
+        .m-body{
+            
+            margin: 50px;
+            /* background: #ecf0f3; */
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-family: poppins;
+  
+
+        }
+        /* div{
+            height: fit-content;
+        } */
+        #banner{
+            background-image: linear-gradient(to right, rgb(83, 134, 83), green);
+            height: fit-content;
+        }
+        /* label{
+            display: block;
+        }
+        input{
+            display: block;
+        } */
+
+
+        .containerd {
+  position: relative;
+  /* width: 350px; */
+  width: 50vw;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 40px;
+  background: #ecf0f3;
+  /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; */
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-image: url('nacos.jpg');
+  background-size: contain;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: rgb(0, 44, 0);
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, input, button, select {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input, select {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button {
+  color: white;
+  margin-top: 20px;
+  background: rgb(0, 44, 0);
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+a {
+  position: absolute;
+  font-size: 8px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.m-body h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* .file1, .file2{
+    display: none;
+} */
+.but1, .but2{
+    padding: 10px;
+    width: fit-content;
+    border-radius: unset;
+    margin: 20px auto;
+    background-color: green;
+}
+
+@media (max-width: 1000px) {
+            .containerd{
+                width: 100vw;
+            }
+        }
+    </style>
+    
+    <!-- <script src="/src/index.js"></script> -->
+</head>
+<body>
+    
+    <div class="jumbotron jumbotron-fluid " id="banner">
+        <div class="container text-center text-md-center">
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-4">
+            	DRIVERS LICENCE<br>
+            	REGISTRATION FORM
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                We implore you to provide valid information about the user 
+                <br>The system is also able to detect theft actions on user's information 
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-12 col-sm-12 m-body">
+    <div class="containerd">
+        <div class="brand-logo"></div>
+        <div class="brand-title">REGISTRATION</div>
+        <form action="" class="form sec-qu">
+        <div class="inputs">
+          <label for="fn">FIRST NAME</label>
+          <input type="text" placeholder="First Name:" name="name" required/>
+          <label for="ln">LAST NAME</label>
+          <input type="text" placeholder="last Name:" name="lname" required/>  
+          <label for="date-of-birth">DATE OF BIRTH</label>
+          <input type="date" name="dob" required>
+          <label>EMAIL</label>
+          <input type="email" placeholder="example@test.com" name="email" required/>
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" name="tel" required>
+          <span class="phone_number_valid">err</span>
+          <label for="state">STATE</label>
+          <select name="" id="state-select" name="state" required></select>
+          <label for="local">LOCAL GOVERNMENT</label>
+          <input type="text" name="lg" required>
+          <label for="address">HOME ADDRESS</label>
+          <input type="text" name="address" required>
+          <label for="certificate">USER IMAGE</label>
+          <input type="file" class="file1" id="file1" hidden="hidden">
+          <button type="button" class="but1" id="but1">Upload</button>
+          <p class="file1ref" id="file1ref"></p>
+          <label for="certificate">DRIVING SCHOOL CERTIFICATE</label>
+          <button type="button" class="but2">Upload</button>
+          <input type="file" class="file2" id="file2" hidden="hidden">
+          <p class="file2ref" id="file2ref"></p>
+          <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+        <a href="#">@evolver</a>
+      </div>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/client-1.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/client-2.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/client-3.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/client-4.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/client-5.png" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="img/client-6.png" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg);">
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                    <p class="my-4">
+                        Te iisque labitur eos, nec sale argumentum scribentur,
+                        <br> augue disputando in vim. Erat fugit sit at, ius lorem.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : company_email@com</li>
+                        <li>Phone : 000-000-0000</li>
+                        <li>Address : 4826 White Avenue, Corpus Christi, Texas</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                    	<div class="row">
+	                        <div class="form-group col-md-6">
+	                            <label for="name">Your Name</label>
+	                            <input type="name" class="form-control" id="name">
+	                        </div>
+	                        <div class="form-group col-md-6">
+	                            <label for="Email">Your Email</label>
+	                            <input type="email" class="form-control" id="Email">
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="message">Message</label>
+	                        <textarea class="form-control" id="message" rows="3"></textarea>
+	                    </div>
+                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    <!-- Copyright © 2018 Chen, Yi-Ya. -->
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="displayPop" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" aria-label="Close" onclick="document.getElementById('loginForm')
+                .style.display='none'"></button>
+              </div>
+              <div class="modal-body">
+                    <p class="zipper"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="document.getElementById('loginForm')
+                .style.display='none'">Close</button>
+                <a type="button" class="btn btn-primary" href="register.html">Continue</a>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+    
+</body>
+<script>
+    var example_array = {
+    1: 'Abia State (Umuahia)',
+    2: 'Adamawa State (Yola)',
+    3: 'Akwa Ibom State (Uyo)',
+    4: 'Anambra State (Awka)',
+    5: 'Bauchi State (Bauchi)',
+    6: 'Bayelsa State (Yenagoa)',
+    7: 'Benue State (Makurdi)',
+    8: 'Borno State (Maiduguri)',
+    9: 'Cross River State (Calabar)',
+    10: 'Delta State (Asaba)',
+    11: 'Ebonyi State (Abakaliki)',
+    12: 'Edo State (Benin City)',
+    13: 'Ekiti State (Ado Ekiti)',
+    14: 'Enugu State (Enugu)',
+    15: 'Gombe State (Gombe)',
+    16: 'Imo State (Owerri)',
+    17: 'Jigawa State (Dutse)',
+    18: 'Kaduna State (Kaduna)',
+    19: 'Kano State (Kano)',
+    20: 'Katsina State (Katsina)',
+    21: 'Kebbi State (Birnin Kebbi)',
+    22: 'Kogi State (Lokoja)',
+    23: 'Kwara State (Ilorin)',
+    24: 'Lagos State (Ikeja)',
+    25: 'Nasarawa State (Lafia)',
+    26: 'Niger State (Minna)',
+    27: 'Ogun State (Abeokuta)',
+    28: 'Ondo State (Akure)',
+    29: 'Osun State (Oshogbo)',
+    30: 'Oyo State (Ibadan)',
+    31: 'Plateau State (Jos)',
+    32: 'Rivers State (Port Harcourt)',
+    33: 'Sokoto State (Sokoto)',
+    34: 'Taraba State (Jalingo)',
+    35: 'Yobe State (Damaturu)',
+    36: 'Zamfara State (Gusau)',
+};
+
+var select = document.getElementById("state-select");
+for(index in example_array) {
+    select.options[select.options.length] = new Option(example_array[index], index);
+}
+</script>
+<script src="main.js"></script>
+<script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script> 
+</html>

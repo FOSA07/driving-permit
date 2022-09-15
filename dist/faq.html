@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/style1.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+<body>
+    
+
+    <main>
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">What is an FAQ Page?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">Why do you need an FAQ page?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+            <h1 class="faq-page">Does it improves the user experience of a website?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="m_second">
+        <button type="button" onclick="document.getElementById('loginForm').style.display='block'">Continue</button>
+    </div>
+
+    <div id="loginForm" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" aria-label="Close" onclick="document.getElementById('loginForm')
+                .style.display='none'"></button>
+              </div>
+              <div class="modal-body">
+                We Hope You've Went Through The Question And Answer Section About driving<br>
+                Would You Like To Progress To Registration Page
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="document.getElementById('loginForm')
+                .style.display='none'">Close</button>
+                <a type="button" class="btn btn-primary" href="register.html">Continue</a>
+              </div>
+            </div>
+          </div>
+        
+    </div>  
+
+    <!-- Button trigger modal -->
+
+    <!-- <script src="main.js"></script> -->
+</body>
+<script>
+
+// main.js file
+var faq = document.getElementsByClassName("faq-page");
+var i;
+
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
+</html>
